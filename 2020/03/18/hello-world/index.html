@@ -658,6 +658,32 @@
     </div>
 
     
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: 'd5aae78ba9e57c5124b0',
+        clientSecret: '397db1d63d2907730341724c1f745966c6d19656',
+        repo: 'lanhaozhang1016.github.io',
+        owner: 'lanhaozhang1016',
+        admin: ["lanhaozhang1016"],
+        id: '2020-03-18T14-35-20',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+    
 
     
         <link rel="stylesheet" href="/libs/gitment/gitment-default.css">
