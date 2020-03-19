@@ -128,7 +128,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="" class="waves-effect waves-light">
+    <a href="/musics" class="waves-effect waves-light">
 
       
       <i class="fas fa-list" style="zoom: 0.6;"></i>
@@ -143,7 +143,7 @@
           
           <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
           
-          <span>Musics</span>
+          <span>音乐</span>
         </a>
       </li>
       
@@ -152,7 +152,7 @@
           
           <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
           
-          <span>Movies</span>
+          <span>电影</span>
         </a>
       </li>
       
@@ -161,7 +161,7 @@
           
           <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
           
-          <span>Books</span>
+          <span>书籍</span>
         </a>
       </li>
       
@@ -288,7 +288,7 @@
 				  
 				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
 			      
-		          <span>Musics</span>
+		          <span>音乐</span>
                   </a>
                 </li>
               
@@ -298,7 +298,7 @@
 				  
 				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
 			      
-		          <span>Movies</span>
+		          <span>电影</span>
                   </a>
                 </li>
               
@@ -308,7 +308,7 @@
 				  
 				   <i class="fa fas fa-book" style="position: absolute;left:50px" ></i>
 			      
-		          <span>Books</span>
+		          <span>书籍</span>
                   </a>
                 </li>
                
@@ -391,53 +391,33 @@
 </header>
 
     <style type="text/css">
-        /* don't remove. */
-        .page404-cover {
-            height: 88vh;  /*页面高度*/
-        }
-        #svgContainer {
-            width: 100%;
-            height: 100%;
-            background-color: white;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-        }
-        header .brand-logo .logo-span {
-            color: #222;
-        }
+    /* don't remove. */
+    .about-cover {
+        height: 80vh;
+    }
+</style>
 
-        header .nav-menu li i {
-            color: #222;
-        }
-
-        header .nav-menu li span {
-            color: #222;
-        }
-
-        header .button-collapse i {
-            color: #222;
-        }
-    </style>
-
-<div class="bg-cover pd-header page404-cover">
-
-    <div class="svgContainer"></div>
-    <script src="/libs/my404/bodymovin.js"></script>
-    <script src="/libs/my404/data.js"></script>
-      <script type="text/javascript">
-          var svgContainer = document.getElementById('svgContainer');
-          var animItem = bodymovin.loadAnimation({
-              wrapper: svgContainer,
-              animType: 'svg',
-              loop: true,
-              animationData: JSON.parse(animationData)
-          });
-      </script>
+<div class="bg-cover pd-header about-cover">
+    <div class="container">
+        <div class="row">
+            <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+                <div class="brand">
+                    <div class="title center-align">
+                        404
+                    </div>
+                    <div class="description center-align">
+                        你访问的页面被外星人叼走啦
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<script>
+    // 每天切换 banner 图.  Switch banner image every day.
+    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+</script>
 
 
     <footer class="page-footer bg-color">
@@ -450,6 +430,9 @@
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">134</span>&nbsp;字
             
             
             
@@ -581,7 +564,11 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
-
+    <!-- weather -->
+    <script type="text/javascript">
+        WIDGET = {FID: 'FlQFLIvsB0'}
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
 </body>
 
 </html>
