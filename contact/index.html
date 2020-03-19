@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="contact, lanhaozhang">
-    <meta name="description" content="false">
+    <meta name="keywords" content="contact, null">
+    <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>contact | lanhaozhang</title>
+    <title>contact | null</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -42,7 +42,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">lanhaozhang</span>
+                    <span class="logo-span"></span>
                 </a>
             </div>
             
@@ -183,7 +183,7 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">lanhaozhang</div>
+        <div class="logo-name"></div>
         <div class="logo-desc">
             
             Never really desperate, only the lost of the soul.
@@ -398,7 +398,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                subtitle
+                这一刻，与你相遇
                 
             </div>
 
@@ -706,6 +706,12 @@ $(function () {
         WIDGET = {FID: 'IIM1nYeOPZ'}
     </script>
     <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+    <script type="text/javascript">
+        var OriginTitile=document.title,st;
+        document.addEventListener("visibilitychange",function(){
+            document.hidden?(document.title="ヽ(●-`Д´-)ノ你要玩捉迷藏嘛",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ好哦！",st=setTimeout(function(){document.title=OriginTitile},3e3))
+        })
+    </script>
 </body>
 
 </html>
